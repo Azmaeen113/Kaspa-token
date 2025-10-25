@@ -6,7 +6,7 @@ import NetworkBackground from "./NetworkBackground";
 
 const Hero = () => {
   return (
-    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden pt-24">
+    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden pt-16 pb-8">
       <NetworkBackground />
       
       <div className="container mx-auto px-4 relative z-10">
@@ -22,24 +22,27 @@ const Hero = () => {
             loop 
             muted 
             playsInline
-            className="w-48 h-48 mx-auto mb-0" 
+            className="w-64 h-64 mx-auto mb-0" 
           />
+          <h2 className="text-4xl md:text-5xl font-bold font-orbitron tracking-wider -mt-2">
+            <span className="text-primary text-glow">KAS</span><span className="text-white">Compute</span>
+          </h2>
 
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
+          <h1 className="text-4xl md:text-6xl font-bold mb-4 leading-tight mt-6">
             Turning idle{" "}
             <span className="text-primary text-glow">GPUs & CPUs</span>
             <br />
             into decentralized compute power
           </h1>
 
-          <p className="text-xl md:text-2xl text-muted-foreground mb-12 max-w-3xl mx-auto">
+          <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-3xl mx-auto">
             Decentralized Compute Power — Powered by Kaspa
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+          <div className="flex flex-col sm:flex-row gap-3 justify-center items-center">
             <Button
               size="lg"
-              className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-8 py-6 text-lg rounded-lg glow-hover transition-all group"
+              className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-6 py-4 text-base rounded-lg glow-hover transition-all group"
             >
               <FileText className="mr-2 group-hover:rotate-12 transition-transform" />
               Read Whitepaper
@@ -47,7 +50,7 @@ const Hero = () => {
             <Button
               size="lg"
               variant="outline"
-              className="border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground font-semibold px-8 py-6 text-lg rounded-lg glow-hover transition-all group"
+              className="border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground font-semibold px-6 py-4 text-base rounded-lg glow-hover transition-all group"
               onClick={() => window.open("https://t.me/KASCompute", "_blank")}
             >
               <Send className="mr-2 group-hover:translate-x-1 transition-transform" />
@@ -56,7 +59,7 @@ const Hero = () => {
             <Button
               size="lg"
               variant="secondary"
-              className="bg-secondary hover:bg-secondary/90 text-secondary-foreground font-semibold px-8 py-6 text-lg rounded-lg glow-hover transition-all group"
+              className="bg-secondary hover:bg-secondary/90 text-secondary-foreground font-semibold px-6 py-4 text-base rounded-lg glow-hover transition-all group"
             >
               <Cpu className="mr-2 group-hover:scale-110 transition-transform" />
               Become a Provider
