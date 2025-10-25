@@ -16,19 +16,14 @@ const Hero = () => {
           transition={{ duration: 0.8 }}
           className="text-center max-w-5xl mx-auto"
         >
-          <motion.div
-            initial={{ scale: 0.9, opacity: 0 }}
-            animate={{ scale: 1, opacity: 1 }}
-            transition={{ duration: 0.6 }}
-            className="mb-8"
-          >
-            <img 
-              src="/favicon.png" 
-              alt="KASCompute Logo" 
-              className="w-32 h-32 mx-auto mb-4 animate-pulse-glow" 
-            />
-            <span className="text-2xl font-bold text-primary text-glow">$KCT</span>
-          </motion.div>
+          <video 
+            src="/video logo.mp4" 
+            autoPlay 
+            loop 
+            muted 
+            playsInline
+            className="w-48 h-48 mx-auto mb-0" 
+          />
 
           <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
             Turning idle{" "}
