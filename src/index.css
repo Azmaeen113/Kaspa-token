@@ -1,0 +1,103 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 0 0% 0%;
+    --foreground: 162 55% 96%;
+
+    --card: 0 0% 5%;
+    --card-foreground: 162 55% 96%;
+
+    --popover: 0 0% 5%;
+    --popover-foreground: 162 55% 96%;
+
+    --primary: 162 100% 50%;
+    --primary-foreground: 0 0% 0%;
+
+    --secondary: 162 86% 51%;
+    --secondary-foreground: 0 0% 0%;
+
+    --muted: 0 0% 15%;
+    --muted-foreground: 162 30% 70%;
+
+    --accent: 162 86% 51%;
+    --accent-foreground: 0 0% 0%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 162 55% 96%;
+
+    --border: 162 50% 20%;
+    --input: 0 0% 10%;
+    --ring: 162 100% 50%;
+
+    --radius: 0.75rem;
+    
+    --glow-primary: 162 100% 50%;
+    --glow-secondary: 162 86% 51%;
+    --glass-bg: 0 0% 10%;
+    --glass-border: 162 50% 30%;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 0 0% 0%;
+    --foreground: 162 55% 96%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-orbitron;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer utilities {
+  .glass {
+    @apply bg-white/5 backdrop-blur-xl border border-white/10;
+  }
+  
+  .glow {
+    box-shadow: 0 0 20px hsl(var(--glow-primary) / 0.5);
+  }
+  
+  .glow-hover {
+    transition: all 0.3s ease;
+  }
+  
+  .glow-hover:hover {
+    box-shadow: 0 0 30px hsl(var(--glow-primary) / 0.7);
+  }
+  
+  .text-glow {
+    text-shadow: 0 0 20px hsl(var(--glow-primary) / 0.8);
+  }
+}
