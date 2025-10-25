@@ -1,5 +1,5 @@
 import { Send, Twitter, Instagram } from "lucide-react";
-import logo from "@/assets/logo.png";
+// Using favicon.png from public folder
 
 const Footer = () => {
   return (
@@ -9,7 +9,7 @@ const Footer = () => {
           {/* Brand */}
           <div>
             <div className="flex items-center space-x-3 mb-4">
-              <img src={logo} alt="KASCompute" className="h-10 w-10" />
+              <img src="/favicon.png" alt="KASCompute" className="h-10 w-10" />
               <span className="text-2xl font-bold">KASCompute</span>
             </div>
             <p className="text-muted-foreground mb-4">

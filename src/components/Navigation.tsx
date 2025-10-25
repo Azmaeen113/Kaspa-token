@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Menu, X } from "lucide-react";
-import logo from "@/assets/logo.png";
+// Using favicon.png from public folder
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -35,7 +35,7 @@ const Navigation = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between">
           <a href="#home" className="flex items-center space-x-3 group">
-            <img src={logo} alt="KASCompute" className="h-10 w-10 animate-pulse-glow" />
+            <img src="/favicon.png" alt="KASCompute" className="h-10 w-10 animate-pulse-glow" />
             <span className="text-2xl font-bold text-foreground group-hover:text-glow transition-all">
               KASCompute
             </span>

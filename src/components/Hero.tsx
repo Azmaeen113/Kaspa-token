@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { FileText, Send, Cpu } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import NetworkBackground from "./NetworkBackground";
-import logo from "@/assets/logo.png";
+// Using favicon.png from public folder
 
 const Hero = () => {
   return (
@@ -23,7 +23,7 @@ const Hero = () => {
             className="mb-8"
           >
             <img 
-              src={logo} 
+              src="/favicon.png" 
               alt="KASCompute Logo" 
               className="w-32 h-32 mx-auto mb-4 animate-pulse-glow" 
             />
