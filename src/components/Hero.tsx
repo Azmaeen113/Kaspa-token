@@ -16,12 +16,9 @@ const Hero = () => {
           transition={{ duration: 0.8 }}
           className="text-center max-w-5xl mx-auto"
         >
-          <video 
-            src="/video logo.mp4" 
-            autoPlay 
-            loop 
-            muted 
-            playsInline
+          <img 
+            src="/favicon.png" 
+            alt="KASCompute Logo" 
             className="w-64 h-64 mx-auto mb-0" 
           />
           <h2 className="text-4xl md:text-5xl font-bold font-orbitron tracking-wider -mt-2">
