@@ -6,7 +6,7 @@ import NetworkBackground from "./NetworkBackground";
 
 const Hero = () => {
   return (
-    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden pt-16 pb-8">
+    <section id="home" className="relative min-h-screen flex items-start justify-center overflow-hidden pt-8 pb-8">
       <NetworkBackground />
       
       <div className="container mx-auto px-4 relative z-10">
@@ -19,20 +19,20 @@ const Hero = () => {
           <img 
             src="/favicon.png" 
             alt="KASCompute Logo" 
-            className="w-64 h-64 mx-auto mb-0" 
+            className="w-56 h-auto mx-auto mb-0 object-contain" 
           />
-          <h2 className="text-4xl md:text-5xl font-bold font-orbitron tracking-wider -mt-2">
+          <h2 className="text-4xl md:text-5xl font-bold font-orbitron tracking-wider -mt-1">
             <span className="text-primary text-glow">KAS</span><span className="text-white">Compute</span>
           </h2>
 
-          <h1 className="text-4xl md:text-6xl font-bold mb-4 leading-tight mt-6">
+          <h1 className="text-4xl md:text-6xl font-bold mb-4 leading-tight mt-5">
             Turning idle{" "}
             <span className="text-primary text-glow">GPUs & CPUs</span>
             <br />
             into decentralized compute power
           </h1>
 
-          <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-3xl mx-auto">
+          <p className="text-lg md:text-xl text-muted-foreground mb-7 max-w-3xl mx-auto">
             Decentralized Compute Power — Powered by Kaspa
           </p>
 
