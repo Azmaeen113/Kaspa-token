@@ -35,7 +35,7 @@ const Navigation = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between">
           <a href="#home" className="flex items-center space-x-3 group">
-            <img src="/favicon.png" alt="KASCompute" className="h-10 w-10 animate-pulse-glow object-cover" />
+            <img src="/favicon.png" alt="KASCompute" className="h-10 w-auto animate-pulse-glow object-contain" />
             <span className="text-2xl font-bold text-foreground group-hover:text-glow transition-all">
               KASCompute
             </span>

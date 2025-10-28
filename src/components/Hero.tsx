@@ -6,7 +6,7 @@ import NetworkBackground from "./NetworkBackground";
 
 const Hero = () => {
   return (
-    <section id="home" className="relative min-h-screen flex items-start justify-center overflow-hidden pt-8 pb-8">
+    <section id="home" className="relative min-h-screen flex items-start justify-center overflow-hidden pt-24 pb-8">
       <NetworkBackground />
       
       <div className="container mx-auto px-4 relative z-10">
@@ -17,11 +17,11 @@ const Hero = () => {
           className="text-center max-w-5xl mx-auto"
         >
           <img 
-            src="/favicon.png" 
+            src="/hero logo.png" 
             alt="KASCompute Logo" 
-            className="w-56 h-auto mx-auto mb-0 object-contain" 
+            className="w-96 h-auto mx-auto mb-6 object-contain" 
           />
-          <h2 className="text-4xl md:text-5xl font-bold font-orbitron tracking-wider -mt-1">
+          <h2 className="text-4xl md:text-5xl font-bold font-orbitron tracking-wider">
             <span className="text-primary text-glow">KAS</span><span className="text-white">Compute</span>
           </h2>
 
