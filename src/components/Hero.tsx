@@ -21,10 +21,6 @@ const Hero = () => {
             alt="KASCompute Logo" 
             className="w-96 h-auto mx-auto mb-6 object-contain" 
           />
-          <h2 className="text-4xl md:text-5xl font-bold font-orbitron tracking-wider">
-            <span className="text-primary text-glow">KAS</span><span className="text-white">Compute</span>
-          </h2>
-
           <h1 className="text-4xl md:text-6xl font-bold mb-4 leading-tight mt-5">
             Turning idle{" "}
             <span className="text-primary text-glow">GPUs & CPUs</span>
