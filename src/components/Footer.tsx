@@ -16,8 +16,8 @@ const Footer = () => {
               Decentralized compute power on Kaspa blockchain
             </p>
             <p className="text-sm text-muted-foreground">
-              <a href="mailto:team@kascompute.io" className="hover:text-primary transition-colors">
-                team@kascompute.io
+              <a href="mailto:team@kascompute.org" className="hover:text-primary transition-colors">
+                team@kascompute.org
               </a>
             </p>
           </div>
